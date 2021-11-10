@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Gordita';
+    src: url('./GorditaRegular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Gordita M';
+    src: url('./GorditaMedium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Flow';
+    src: url('./flow-circular.woff') format('woff2');
+}
+
+body{
+  @apply bg-gray-100;
+  zoom: 90%;
+  /* background: linear-gradient(to right, #eb4778, #e41452) */
+}
+
+.font-flow{
+    font-family: 'Flow', 'sans serif';
+}
+
+.font-gordita{
+    font-family: 'Gordita', 'sans serif';
+}
+
+.font-gordita-bold{
+    font-family: 'Gordita M', 'sans serif';
+}
+
+.job-active{
+    @apply ring-1 ring-purple-500 ring-offset-gray-100 ring-offset-4 shadow-lg
+}
+
+.opt-active{
+    @apply bg-black;
+}
+
+.iti.iti--allow-dropdown{
+    @apply lg:col-span-3 col-span-6
+}
+
+.iti__flag {
+    background-image: url("./flags.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {background-image: url("./flags@2x.png");}
+}

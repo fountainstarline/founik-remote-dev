@@ -1,0 +1,43 @@
+{
+    "emailjs_id": {
+        "service_id": "service_50x2fkw",
+        "template_id": "template_2n4uaer",
+        "user_id": "user_g0A5P2BgtYi7BZrexZt1r"
+    },
+    "googleSheetUrl": "https://sheet.best/api/sheets/23e58fe5-1679-4f7a-bb0c-40e67664f124",
+    "time": [
+        "Part time",
+        "Full time"
+    ],
+    "staffs": [
+        "1-10",
+        "11-50",
+        "51-200",
+        "200+"
+    ],
+    "skillArray": [
+        "Flutter",
+        "Ethical Hackers",
+        "Analytics",
+        "Data Analyst",
+        "Game Developers",
+        "DevOps",
+        "UI/UX Designers",
+        "Graphics Designers",
+        "AI Engineers",
+        "Machine Learning Engineers",
+        "Data Scientists | Analytics",
+        "Full Stack Web developers",
+        "Back-End developers",
+        "Front-End developers",
+        "Mobile apps developers",
+        "Quality assurance engineers",
+        "Shopify | Wordpress developers",
+        "DevOps Engineers",
+        "Data Architects",
+        "Business Analytics | Srcum Master",
+        "Virtual Reality",
+        "Augumented Reality"
+    ]
+}
+
