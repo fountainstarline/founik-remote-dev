@@ -8,6 +8,15 @@ import Page404 from './Page404';
 import emailjs from 'emailjs-com';
 import { emailjs_id, googleSheetUrl } from './config.json';
 import './static/turing.css';
+import Abouts from './pages/Abouts';
+import BookConsultation from './pages/BookConsultation';
+import ContactUs from './pages/ContactUs';
+import HelpCenter from './pages/HelpCenter';
+import Partnership from './pages/Partnership';
+import Support from './pages/Support';
+import Thank from './pages/Thank';
+import Index from './pages/Index';
+
 
 export const Hire = createContext();
 
@@ -151,7 +160,22 @@ const Main = () => {
       >
         <Router>
           <Switch>
-            <Route exact path='/' component={Home} />
+            <Route exact path='/' component={Index} />
+
+            <Route exact path='/about' component={Abouts} />
+
+            <Route exact path='/book-consultation' component={BookConsultation} />
+
+            <Route exact path='/contact-us' component={ContactUs} />
+
+            <Route exact path='/help-center' component={HelpCenter} />
+
+            <Route exact path='/partnership' component={Partnership} />
+
+            <Route exact path='/support' component={Support} />
+
+            <Route exact path='/thanks' component={Thank} />
+
 
             <Route exact path='/hire' component={Step1} />
 

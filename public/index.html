@@ -9,6 +9,10 @@
       name="description"
       content="Web site created using create-react-app"
     />
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -39,5 +43,48 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+
+
+      <script defer src="assets/vendor/aos/aos.js"></script>
+      <script defer src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script defer src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+      <script defer src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <script defer src="assets/vendor/purecounter/purecounter.js"></script>
+      <script defer src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+      <script defer src="assets/js/main.js"></script>
+      <script defer src="assets/js/button.js"></script>
+      <script defer src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+      <script defer src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+      <script defer src="assets/vendor/intlTelInput/intlTelInput.min.js"></script>
+      <script defer src="assets/vendor/intlTelInput/utils.js"></script>
+      <script>
+          var input = document.querySelector("#Phone");
+          window.intlTelInput(input, {
+            allowDropdown: true,
+            // autoHideDialCode: false,
+            // autoPlaceholder: "off",
+            // dropdownContainer: document.body,
+            // excludeCountries: ["us"],
+            // formatOnDisplay: false,
+            // geoIpLookup: function(callback) {
+            //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+            //     var countryCode = (resp && resp.country) ? resp.country : "";
+            //     callback(countryCode);
+            //   });
+            // },
+            // hiddenInput: "full_number",
+            // initialCountry: "auto",
+            // localizedCountries: { 'de': 'Deutschland' },
+            // nationalMode: true,
+            // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+            // placeholderNumberType: "MOBILE",
+            // preferredCountries: ['cn', 'jp'],
+            separateDialCode: true,
+            utilsScript: "assets/vendor/intlTelInput/utils.js",
+          });
+    
+      </script>
   </body>
 </html>
