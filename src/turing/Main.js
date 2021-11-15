@@ -1,6 +1,6 @@
 import { useState, createContext } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './Home';
+// import Home from './Home';
 import Step1 from './Step1';
 import Step2 from './Step2';
 import Step3 from './Step3';
@@ -175,7 +175,6 @@ const Main = () => {
             <Route exact path='/support' component={Support} />
 
             <Route exact path='/thanks' component={Thank} />
-
 
             <Route exact path='/hire' component={Step1} />
 

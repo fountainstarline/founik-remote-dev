@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
 
@@ -50,6 +51,8 @@ const Support = () => {
       src="https://www.facebook.com/tr?id=879346696086897&ev=PageView&noscript=1"
       /></noscript>
     <!-- End Facebook Pixel Code -->
+<meta name="theme-color" content="#000000" />
+    <link rel="icon" href="/favicon.png" />
     
   `
     document.title = 'founik remote customer support';
@@ -70,56 +73,18 @@ const Support = () => {
                 </noscript>
 
 
-                <header id="header" className="fixed-top d-flex align-items-center">
-                    <div className="container d-flex align-items-center justify-content-between">
-
-                        <div className="logo">
-                            <h1>
-                                <a href="/">
-                                    <img src="assets/img/logo.png" alt="" width="200" height="auto"/>
-                                </a>
-                            </h1>
-
-                        </div>
-
-                        <nav id="navbar" className="navbar">
-                            <ul>
-
-
-                                <li>
-                                    <a href="/contact-us">
-                                        Jump to hiring page
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/book-consultation">
-                                        Book free hiring consultation
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/partnership">
-                                        Join our Partners
-                                    </a>
-                                </li>
-
-
-                            </ul>
-                            <i className="bi bi-list mobile-nav-toggle"></i>
-                        </nav>
-
-                    </div>
-                </header>
+                <Header/>
 
                 <section id="hero" className="d-flex align-items-center">
                     <div className="container">
                         <div className="row">
                             <div className="
-                                                                                                                                                                                                                                                                                                            col-lg-6
-                                                                                                                                                                                                                                                                                                            pt-5 pt-lg-0
-                                                                                                                                                                                                                                                                                                            d-flex
-                                                                                                                                                                                                                                                                                                            flex-column
-                                                                                                                                                                                                                                                                                                            justify-content-center
-                                                                                                                                                                                                                                                                                                          ">
+                                                                                                                                                                                                                                                                                                                                                                                    col-lg-6
+                                                                                                                                                                                                                                                                                                                                                                                    pt-5 pt-lg-0
+                                                                                                                                                                                                                                                                                                                                                                                    d-flex
+                                                                                                                                                                                                                                                                                                                                                                                    flex-column
+                                                                                                                                                                                                                                                                                                                                                                                    justify-content-center
+                                                                                                                                                                                                                                                                                                                                                                                  ">
                                 <h1>
                                     Need more support?
                                 </h1>
@@ -232,96 +197,7 @@ const Support = () => {
                 </main>
 
 
-                <footer id="footer">
-
-                    <div className="footer-top">
-                        <div className="container">
-                            <div className="row">
-
-
-                                <div className="col-lg-4 col-md-6 footer-links">
-                                    <h4>
-                                        Company
-                                    </h4>
-                                    <ul>
-                                        <li><a href="#">Hire developer</a></li>
-                                        <li><a href="/about">About us</a></li>
-                                        <li><a href="/contact-us">Contact</a></li>
-                                        <li><a href="/partnership">Partnership</a></li>
-
-
-                                    </ul>
-
-
-                                </div>
-
-                                <div className="col-lg-4 col-md-6 footer-links">
-                                    <h4>
-                                        Support
-                                    </h4>
-                                    <ul>
-                                        <li><a href="/help-center">Help centre</a></li>
-                                        <li><a href="/support">Customer support</a></li>
-
-                                        <li><a href="/book-consultation">Book free consultation</a></li>
-
-                                    </ul>
-                                </div>
-
-                                <div className="col-lg-4 col-md-6 footer-links">
-                                    <h4>
-                                        About Parent Company (Founik Soft)
-                                    </h4>
-                                    <ul>
-                                        <li><a href="https://www.founiksoft.com" target="blank">founiksoft.com</a></li>
-                                        <li><a href="https://www.founiksoft.com/mobile-apps.html" target="blank">Build Mobile apps with Founik Soft</a></li>
-                                        <li><a href="https://www.founiksoft.com/web-apps.html" target="blank">Build Web apps & websites  with Founik Soft</a></li>
-                                        <li><a href="https://www.founiksoft.com/Ai-apps.html" target="blank">Build AI base apps with Founik Soft</a></li>
-                                        <li><a href="https://www.founiksoft.com/lowcode-websites.html" target="blank">Build Low-code apps & websites with Founik Soft</a></li>
-                                        <li><a href="https://www.founiksoft.com/big-data.html" target="blank">Big Data analytics solutions</a></li>
-                                        <li><a href="https://www.founiksoft.com/digital-business-pipeline.html" target="blank">Build digital business pipelines</a></li>
-                                    </ul>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="container d-md-flex justify-content-around py-4">
-
-                        <div className="mr-md-auto text-center text-md-left">
-                            <div className="copyright">
-                                &copy; Copyright 2021
-                                <strong>
-                                    <span>
-                                        Founik Remote
-                                    </span>
-                                </strong>
-                                . All Rights Reserved
-                            </div>
-                            <div className="credits"></div>
-                        </div>
-                        <div className="social-links text-center text-md-left pt-3 pt-md-0">
-
-                            <a href="https://web.facebook.com/FounikRemote/" target="blank" className="facebook">
-                                <i className="bx bxl-facebook"></i>
-                            </a>
-                            <a href="https://www.instagram.com/founikremote/" target="blank" className="instagram">
-                                <i className="bx bxl-instagram"></i>
-                            </a>
-
-                            <a href="https://www.linkedin.com/company/founik-remote" target="blank" className="linkedin">
-                                <i className="bx bxl-linkedin"></i>
-                            </a>
-                        </div>
-                    </div>
-                </footer>
-
-
-                <a href="#" className="back-to-top d-flex align-items-center justify-content-center">
-                    <i className="bi bi-arrow-up-short"></i>
-                </a>
+                <Footer/>
 
 
                 <script src="assets/vendor/aos/aos.js"></script>

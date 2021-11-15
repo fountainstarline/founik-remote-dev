@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
 
@@ -50,6 +51,8 @@ const Thank = () => {
       src="https://www.facebook.com/tr?id=879346696086897&ev=PageView&noscript=1"
       /></noscript>
     <!-- End Facebook Pixel Code -->
+<meta name="theme-color" content="#000000" />
+    <link rel="icon" href="/favicon.png" />
     
   `
     document.title = 'Partner with founik remote';
@@ -57,18 +60,26 @@ const Thank = () => {
     return (
         <>
 
-            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVFCCN4"
-            height="0" width="0" style={{display:'none',visibility:'hidden'}}></iframe></noscript>
-            
+            <noscript>
+                <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVFCCN4" height="0" width="0"
+                    style={
+                        {
+                            display: 'none',
+                            visibility: 'hidden'
+                        }
+                }></iframe>
+            </noscript>
+
             <section id="thanks">
-            
 
-            <h3 class="thanks">Thanks for getting in touch with Founik Remote team. 
-                We will review your requset and get back to your before 24hours time
 
-            </h3>
-  
-            
+                <h3 class="thanks">
+                    Thanks for getting in touch with Founik Remote team. 
+                                        We will review your requset and get back to your before 24hours time
+
+                </h3>
+
+
             </section>
 
         </>
@@ -77,4 +88,3 @@ const Thank = () => {
 }
 
 export default Thank;
-

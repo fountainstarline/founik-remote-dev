@@ -7,6 +7,7 @@ import logo from './static/logo.png';
 import { Hire } from './Main';
 
 const Step1 = () => {
+
     document.title = 'Hire Developers';
 
     const [errors, setErrors] = useState([]);

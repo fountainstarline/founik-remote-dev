@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
 
@@ -47,6 +48,8 @@ const Abouts = () => {
       src="https://www.facebook.com/tr?id=879346696086897&ev=PageView&noscript=1"
       /></noscript>
     <!-- End Facebook Pixel Code -->
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" href="/favicon.png" />
     
   `
     document.title = 'About Founik Remote';
@@ -54,7 +57,7 @@ const Abouts = () => {
     return (
         <>
             <noscript>
-                <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVFCCN4" height="0" width="0"
+                <iframe title="Noscript" src="https://www.googletagmanager.com/ns.html?id=GTM-TVFCCN4" height="0" width="0"
                     style={
                         {
                             display: 'none',
@@ -71,12 +74,12 @@ const Abouts = () => {
                 <div className="container">
                     <div className="row">
                         <div className="
-                                                col-lg-6
-                                                pt-5 pt-lg-0
-                                                d-flex
-                                                flex-column
-                                                justify-content-center
-                                              ">
+                                                                                                                                                                                                                                                col-lg-6
+                                                                                                                                                                                                                                                pt-5 pt-lg-0
+                                                                                                                                                                                                                                                d-flex
+                                                                                                                                                                                                                                                flex-column
+                                                                                                                                                                                                                                                justify-content-center
+                                                                                                                                                                                                                                              ">
                             <h1 style={
                                 {fontSize: '28px'}
                             }>
@@ -84,7 +87,7 @@ const Abouts = () => {
                             </h1>
                             <h2>
                                 With Founik Remote it takes you only 48hours to hire already screened developers for your business need,
-                                                backed up by a 100% refund on failed contracts or projects.
+                                                                                                                                                                                                                                                backed up by a 100% refund on failed contracts or projects.
                             </h2>
                             <div></div>
                         </div>
@@ -117,8 +120,8 @@ const Abouts = () => {
                         }>
 
                             Founik Remote was innovated by  Founik Soft in order to extend its services to the global market by giving clients or organizations the opportunity to leverage the talent pool of Founik Soft screened remote developers spanned globally. As a software company, we understand that one of the challenges other organizations face is hiring unskilled developers for their projects. 
-                                          It leads to both waste of time and resources, that's why we are here to bridge this gap.
-                                            We work on a service plan that enables us to merge our Remote developers to our Global clients within 48hrs times after sending in a hiring proposal. We are Founik Remote! our goal is to help businesses get access to the right developers with the best skillsets.
+                                                                                                                                                                                                                  It leads to both waste of time and resources, that's why we are here to bridge this gap.
+                                                                                                                                                                                                                    We work on a service plan that enables us to merge our Remote developers to our Global clients within 48hrs times after sending in a hiring proposal. We are Founik Remote! our goal is to help businesses get access to the right developers with the best skillsets.
 
                         </p>
                     </div>
@@ -144,7 +147,7 @@ const Abouts = () => {
                             </h3>
 
                             <div className="btn2">
-                                <a href="#">
+                                <a href="/hire">
                                     <button type="button" className="btn btn-primary btn-lg ml-4 mt-4" id="group">
                                         Hire screened developers
                                     </button>
@@ -175,17 +178,17 @@ const Abouts = () => {
 
 
                     <div className="group">
-                        <a href="/book-consultation">
+                        <Link to="/book-consultation">
                             <button type="button" className="btn btn-primary btn-lg ml-4" id="group">
                                 Book a free consultation with us
                             </button>
-                        </a>
+                        </Link>
                         <span className="option"></span>
-                        <a href="" target="blank">
+                        <Link to="" target="blank">
                             <button type="button" className="btn btn-secondary btn-lg">
                                 start a chat with a recruiting expert
                             </button>
-                        </a>
+                        </Link>
                     </div>
                 </div>
 

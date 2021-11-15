@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
 
@@ -51,6 +52,8 @@ const Index = () => {
       src="https://www.facebook.com/tr?id=879346696086897&ev=PageView&noscript=1"
       /></noscript>
     <!-- End Facebook Pixel Code -->
+<meta name="theme-color" content="#000000" />
+    <link rel="icon" href="/favicon.png" />
     
   `
     document.title = 'Hire remote developers within 48hours from Founik Remote';
@@ -71,47 +74,7 @@ const Index = () => {
                 </noscript>
 
 
-                <header id="header" className="fixed-top d-flex align-items-center">
-                    <div className="container d-flex align-items-center justify-content-between">
-
-                        <div className="logo">
-                            <h1>
-                                <a href="/">
-                                    <img src="assets/img/logo.png" alt="" width="200" height="auto"/>
-                                </a>
-                            </h1>
-
-                        </div>
-
-                        <nav id="navbar" className="navbar">
-                            <ul>
-
-
-                                <li>
-                                    <a href="/contact-us">
-                                        Jump to hiring page
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/book-consultation">
-                                        Book free hiring consultation
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/partnership">
-                                        Join our Partners
-                                    </a>
-                                </li>
-
-
-                            </ul>
-                            <i className="bi bi-list mobile-nav-toggle"></i>
-                        </nav>
-
-
-                    </div>
-                </header>
-
+                <Header/>
 
                 <section id="hero" className="d-flex align-items-center">
 
@@ -126,10 +89,10 @@ const Index = () => {
                                 </h1>
                                 <h2 data-aos="" data-aos-delay="">
                                     Hire Founik Remote screened developers within 48hours and secure a 
-                                                                                                                                                                                                                                                                                                                                    100% refund guarantee on any failed contract plus emergency worker backup for each hire you made.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                100% refund guarantee on any failed contract plus emergency worker backup for each hire you made.
                                 </h2>
                                 <div className="btn2">
-                                    <a href="#">
+                                    <a href="/hire">
                                         <button type="button" className="btn btn-primary btn-lg ml-4 mt-4" id="group">
                                             Hire screened developers
                                         </button>
@@ -254,7 +217,7 @@ const Index = () => {
                                         </h4>
                                         <p>
                                             We offer talent backups to our clients in case of emergencies such
-                                                                                                                                                                                                                                                                                                                                                                                                                        as health issues of our remote worker or work incompatibility to the proposed Client.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            as health issues of our remote worker or work incompatibility to the proposed Client.
                                         </p>
 
                                     </div>
@@ -375,10 +338,10 @@ const Index = () => {
                                         }
                                         className="hire-description">
                                         Founik Remote offers 100 plus developers programming skills you can hire for your business needs. 
-                                                                                                                                                                                                                                                                                                                                                                                We also empower our developers to help you in achieving your business milestones
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        We also empower our developers to help you in achieving your business milestones
                                     </h3>
                                     <div className="btn2">
-                                        <a href="#">
+                                        <a href="/hire">
                                             <button type="button" className="btn btn-primary btn-lg ml-4 mt-4" id="group">
                                                 Hire screened developers
                                             </button>
@@ -405,7 +368,7 @@ const Index = () => {
                               </h2>
                               
                               <div className="btn2" >
-                                <a href="#"><button type="button" className="btn btn-primary btn-lg ml-4 mt-4" id="group" >Hire screened developers</button></a><span className="option"></span>
+                                <Link to="/hire"><button type="button" className="btn btn-primary btn-lg ml-4 mt-4" id="group" >Hire screened developers</button></a><span className="option"></span>
                                 
                               </div>
                             </div>
@@ -438,11 +401,11 @@ const Index = () => {
                                         Take advantage of our Apps solution kit today to start building your Apps and websites
                                       </p> --> */}
                             <div className="group">
-                                <a href="/book-consultation">
+                                <Link to="/book-consultation">
                                     <button type="button" className="btn btn-primary btn-md ml-4" id="group2">
                                         Book a free consultation with us
                                     </button>
-                                </a>
+                                </Link>
                                 <span className="option"></span>
                                 <a href="" target="blank">
                                     <button type="button" className="btn btn-secondary btn-md" id="group2">
@@ -459,95 +422,7 @@ const Index = () => {
                 </main>
 
 
-                <footer id="footer">
-                    <div className="footer-top">
-                        <div className="container">
-                            <div className="row">
-
-
-                                <div className="col-lg-4 col-md-6 footer-links">
-                                    <h4>
-                                        Company
-                                    </h4>
-                                    <ul>
-                                        <li><a href="#">Hire developer</a></li>
-                                        <li><a href="/about">About us</a></li>
-                                        <li><a href="/contact-us">Contact</a></li>
-                                        <li><a href="/partnership">Partnership</a></li>
-
-
-                                    </ul>
-
-
-                                </div>
-
-                                <div className="col-lg-4 col-md-6 footer-links">
-                                    <h4>
-                                        Support
-                                    </h4>
-                                    <ul>
-                                        <li><a href="/help-center">Help centre</a></li>
-                                        <li><a href="/support">Customer support</a></li>
-
-                                        <li><a href="/book-consultation">Book free consultation</a></li>
-
-                                    </ul>
-                                </div>
-
-                                <div className="col-lg-4 col-md-6 footer-links">
-                                    <h4>
-                                        About Parent Company (Founik Soft)
-                                    </h4>
-                                    <ul>
-                                        <li><a href="https://www.founiksoft.com" target="blank">founiksoft.com</a></li>
-                                        <li><a href="https://www.founiksoft.com/mobile-apps.html" target="blank">Build Mobile apps with Founik Soft</a></li>
-                                        <li><a href="https://www.founiksoft.com/web-apps.html" target="blank">Build Web apps & websites  with Founik Soft</a></li>
-                                        <li><a href="https://www.founiksoft.com/Ai-apps.html" target="blank">Build AI base apps with Founik Soft</a></li>
-                                        <li><a href="https://www.founiksoft.com/lowcode-websites.html" target="blank">Build Low-code apps & websites with Founik Soft</a></li>
-                                        <li><a href="https://www.founiksoft.com/big-data.html" target="blank">Big Data analytics solutions</a></li>
-                                        <li><a href="https://www.founiksoft.com/digital-business-pipeline.html" target="blank">Build digital business pipelines</a></li>
-                                    </ul>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="container d-md-flex justify-content-around py-4">
-
-                        <div className="mr-md-auto text-center text-md-left">
-                            <div className="copyright">
-                                &copy; Copyright 2021
-                                <strong>
-                                    <span>
-                                        Founik Remote
-                                    </span>
-                                </strong>
-                                . All Rights Reserved
-                            </div>
-                            <div className="credits"></div>
-                        </div>
-                        <div className="social-links text-center text-md-left pt-3 pt-md-0">
-
-                            <a href="https://web.facebook.com/FounikRemote/" target="blank" className="facebook">
-                                <i className="bx bxl-facebook"></i>
-                            </a>
-                            <a href="https://www.instagram.com/founikremote/" target="blank" className="instagram">
-                                <i className="bx bxl-instagram"></i>
-                            </a>
-
-                            <a href="https://www.linkedin.com/company/founik-remote" target="blank" className="linkedin">
-                                <i className="bx bxl-linkedin"></i>
-                            </a>
-                        </div>
-                    </div>
-                </footer>
-
-
-                <a href="#" className="back-to-top d-flex align-items-center justify-content-center">
-                    <i className="bi bi-arrow-up-short"></i>
-                </a>
+                <Footer/>
 
 
                 <script src="assets/vendor/aos/aos.js"></script>
