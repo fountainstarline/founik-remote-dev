@@ -46,15 +46,15 @@ const OtherJobs = ({errors}) => {
 
     return(
         <>
-            <div onClick={popdown} className="modal hidden fixed w-full h-full top-0 left-0"></div>
+            <div onClick={popdown} className="modal z-10 hidden fixed w-full h-full top-0 left-0"></div>
 
-            <section className="relative z-10">
+            <section className="relative z-50 p-0 overflow-visible" style={{ overflow: 'visible!important' }}>
 
                 {/* Popup Box that contains more skills */}
                 <div id="more-jobs" className="hidden
-                    h-56 bg-white border-2 border-gray-400 rounded-md overflow-hidden overflow-y-scroll
+                    h-56 bg-white border-2 border-gray-400 rounded-md overflow-y-scroll
                     absolute bottom-full my-3 w-full
-                ">
+                "  style={{ overflow: 'none!important' }}>
                     {skills.map((skill, index) => {
                         return(
                             <div key={index} onClick={handleJob} data-job={skill} className={`

@@ -15,7 +15,7 @@
 
 body{
   @apply bg-gray-100;
-  zoom: 90%;
+  /* zoom: 90%; */
   /* background: linear-gradient(to right, #eb4778, #e41452) */
 }
 

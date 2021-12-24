@@ -5,66 +5,14 @@ import Header from "./Header";
 
 const Index = () => {
 
-    document.head.innerHTML = `
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet">
-
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.css" rel="stylesheet">
-    <link href="assets/css/intlTelInput.min.css" rel="stylesheet">
-
-
-    <meta content="Hire Founik Soft screened remote developers within 48hours and secure a 
-  100% refund guarantee on any failed contract plus emergency worker backup for each hire you made. " name="description">
-  <meta content="Ai engineers, Machine Learning Engineers, Data Scientist, Web developers, Website developers, Back End-developers, Frontend developers, Mobile-apps-developers, Quality-assurance, Wordpress-developers, DevOp-Engineers, shopify website developers, cloud computing engineers, cyber security, AWS computing, best software outsourcing companies, hire remote developers, hire FOUNIK SOFT REMOTE DEVELOPERS, HIRE FOUNIK REMOTE DEVELOPERS" name="keywords">
-
-    <!-- Google Tag Manager -->
-      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-TVFCCN4');</script>
-    <!-- End Google Tag Manager -->
-
-
-    <!-- Facebook Pixel Code -->
-      <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '879346696086897');
-        fbq('track', 'PageView');
-      </script>
-      <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=879346696086897&ev=PageView&noscript=1"
-      /></noscript>
-    <!-- End Facebook Pixel Code -->
-<meta name="theme-color" content="#000000" />
-    <link rel="icon" href="/favicon.png" />
-    
-  `
     document.title = 'Hire remote developers within 48hours from Founik Remote';
+    document.head.querySelector('meta[name=description]').content = "Hire Founik Soft screened remote developers within 48hours and secure a 100% refund guarantee on any failed contract plus emergency worker backup for each hire you made. ";
+    document.head.querySelector('meta[name=keywords]').content = "Ai engineers, Machine Learning Engineers, Data Scientist, Web developers, Website developers, Back End-developers, Frontend developers, Mobile-apps-developers, Quality-assurance, Wordpress-developers, DevOp-Engineers, shopify website developers, cloud computing engineers, cyber security, AWS computing, best software outsourcing companies, hire remote developers, hire FOUNIK SOFT REMOTE DEVELOPERS, HIRE FOUNIK REMOTE DEVELOPERS"
 
     return (
         <>
-
-            <body>
-
                 <noscript>
-                    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVFCCN4" height="0" width="0"
+                    <iframe title="Google Tag" src="https://www.googletagmanager.com/ns.html?id=GTM-TVFCCN4" height="0" width="0"
                         style={
                             {
                                 display: 'none',
@@ -87,14 +35,15 @@ const Index = () => {
                                 }>
                                     Hire from the global remote developer's talent pool
                                 </h1>
-                                <h2 data-aos="" data-aos-delay="">
-                                    Hire Founik Remote screened developers within 48hours and secure a 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                100% refund guarantee on any failed contract plus emergency worker backup for each hire you made.
-                                </h2>
-                                <div className="btn2">
-                                    <a href="/hire">
-                                        <button type="button" className="btn btn-primary btn-lg ml-4 mt-4" id="group">
-                                            Hire screened developers
+                                <div className="col-lg-9">
+                                    <h2 data-aos="" data-aos-delay="">
+                                        Hire Founik Remote screened developers within 48hours and secure a 100% refund guarantee on any failed contract plus emergency worker backup for each hire you made.
+                                    </h2>
+                                </div>
+                                <div className="btn2 pl-0 flex justify-content-center justify-content-lg-start">
+                                    <a href="/hire" className="">
+                                        <button type="button" className="btn btn-primary btn-lg bg-black border-0 mt-4" id="group" style={{ fontWeight: '600' }}>
+                                            Hire Screened Developers
                                         </button>
                                     </a>
                                     <span className="option"></span>
@@ -102,7 +51,7 @@ const Index = () => {
                                 </div>
                             </div>
                             <div className="col-lg-6 hero-img" data-aos="" data-aos-delay="">
-                                <img src="assets/img/remotedev.png" className="img-fluid animated" alt="a remote developer"/>
+                                <img src="assets/img/remotedev.png" className="img-fluid animated mx-auto" alt="a remote developer"/>
                             </div>
                         </div>
                     </div>
@@ -119,7 +68,7 @@ const Index = () => {
                     }>
                         <div className="container" data-aos="">
 
-                            <div className="section-title">
+                            {/* <div className="section-title">
                                 <h2 style={
                                     {fontSize: '19px'}
                                 }>
@@ -133,7 +82,7 @@ const Index = () => {
                                 }>
                                     Let’s take a drive as we walk you through packs of benefits that make our clients keep on coming back for our services
                                 </p>
-                            </div>
+                            </div> */}
 
                             <div className="row mt-4">
                                 <div className="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="" data-aos-delay="">
@@ -333,16 +282,17 @@ const Index = () => {
                                     <h3 style={
                                             {
                                                 fontSize: '20px',
-                                                lineHeight: '35px'
+                                                lineHeight: '30px',
+                                                fontWeight: "bold",
+                                                textTransform: "capitalize"
                                             }
                                         }
                                         className="hire-description">
-                                        Founik Remote offers 100 plus developers programming skills you can hire for your business needs. 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        We also empower our developers to help you in achieving your business milestones
+                                        Founik Remote offers 100 plus developers programming skills you can hire for your business needs. We also empower our developers to help you in achieving your business milestones
                                     </h3>
-                                    <div className="btn2">
-                                        <a href="/hire">
-                                            <button type="button" className="btn btn-primary btn-lg ml-4 mt-4" id="group">
+                                    <div className="btn2 pl-0 flex justify-content-center justify-content-lg-start">
+                                        <a href="/hire" className="">
+                                            <button type="button" className="btn btn-primary btn-lg bg-black border-0 mt-4" id="group">
                                                 Hire screened developers
                                             </button>
                                         </a>
@@ -400,18 +350,18 @@ const Index = () => {
                             {/* <!-- <p className="white" >
                                         Take advantage of our Apps solution kit today to start building your Apps and websites
                                       </p> --> */}
-                            <div className="group">
-                                <Link to="/book-consultation">
-                                    <button type="button" className="btn btn-primary btn-md ml-4" id="group2">
+                            <div className="group grid grid-cols-1 gap-1 lg:w-1/2 mx-auto items-center">
+                                <Link to="/book-consultation" className="lg:col-span-1 col-span-2">
+                                    <button type="button" className="btn btn-primary btn-md ml-4" id="group2" style={{ background: '#ef7f1a', border: '#ef7f1a' }}>
                                         Book a free consultation with us
                                     </button>
                                 </Link>
-                                <span className="option"></span>
-                                <a href="" target="blank">
+                                {/* <span className="option"></span> */}
+                                {/* <a href="" target="blank" className="lg:col-span-1 col-span-2">
                                     <button type="button" className="btn btn-secondary btn-md" id="group2">
                                         start a chat with a recruiting expert
                                     </button>
-                                </a>
+                                </a> */}
                             </div>
                         </div>
 
@@ -440,9 +390,6 @@ const Index = () => {
 
 
                 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
-            </body>
-
 
         </>
     );

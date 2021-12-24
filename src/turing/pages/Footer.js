@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-export default() => {
+const Footer = () => {
     return (
         <>
             <footer id="footer">
@@ -16,8 +16,7 @@ export default() => {
                                 <ul>
                                     <li><a href="/hire">Hire developer</a></li>
                                     <li><Link to="/about">About us</Link></li>
-                                    <li><Link to="/contact-us">Contact</Link></li>
-                                    <li><Link to="/partnership">Partnership</Link></li>
+                                    
 
 
                                 </ul>
@@ -30,10 +29,8 @@ export default() => {
                                     Support
                                 </h4>
                                 <ul>
-                                    <li><Link to="/help-center">Help centre</Link></li>
-                                    <li><Link to="/support">Customer support</Link></li>
-
-                                    <li><Link to="/app-solutionkit">Book free consultation</Link></li>
+                                    <li><Link to="/contact-us">Contact Us</Link></li>
+                                    <li><Link to="/book-consultation">Book free consultation</Link></li>
 
                                 </ul>
                             </div>
@@ -58,11 +55,27 @@ export default() => {
                     </div>
                 </div>
 
+                <div className="d-md-flex justify-content-around py-4 fake">
+
+                    <div className="mr-md-auto text-center text-md-left">
+                        <div className="copyright">
+                            <strong>
+                                Founik Remote &nbsp;
+                            </strong> 
+                            Powered by &nbsp;
+                            <strong>
+                                Founik Technologies
+                            </strong> owners of Founik Soft & Founik Market
+                        </div>
+                        <div className="credits"></div>
+                    </div>
+                </div>
+
                 <div className="container d-md-flex justify-content-around py-4">
 
                     <div className="mr-md-auto text-center text-md-left">
                         <div className="copyright">
-                            &copy; Copyright 2021
+                            &copy; Copyright 2021 
                             <strong>
                                 <span>
                                     Founik Remote
@@ -89,10 +102,12 @@ export default() => {
             </footer>
 
 
-            <a href="#" className="back-to-top d-flex align-items-center justify-content-center">
+            {/* <a href="#" className="back-to-top d-flex align-items-center justify-content-center">
                 <i className="bi bi-arrow-up-short"></i>
-            </a>
+            </a> */}
 
         </>
     );
 }
+
+export default Footer;

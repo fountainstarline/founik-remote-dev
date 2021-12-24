@@ -5,54 +5,9 @@ import Header from "./Header";
 
 const Abouts = () => {
 
-    document.head.innerHTML = `
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-
-
-    <meta content=" founik-soft has develop an App solution kit which makes owing a Tech startup a breeze. we  build, market and manage the overall  clients Apps business." name="description">
-    <meta content="software company, “software developer, software engineers, " name="keywords">
-
-    <!-- Google Tag Manager -->
-      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-TVFCCN4');</script>
-    <!-- End Google Tag Manager -->
-
-
-    <!-- Facebook Pixel Code -->
-      <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '879346696086897');
-        fbq('track', 'PageView');
-      </script>
-      <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=879346696086897&ev=PageView&noscript=1"
-      /></noscript>
-    <!-- End Facebook Pixel Code -->
-    <meta name="theme-color" content="#000000" />
-    <link rel="icon" href="/favicon.png" />
-    
-  `
     document.title = 'About Founik Remote';
+    document.head.querySelector('meta[name=description]').content = " founik-soft has develop an App solution kit which makes owing a Tech startup a breeze. we  build, market and manage the overall  clients Apps business.";
+    document.head.querySelector('meta[name=keywords]').content = "software company, “software developer, software engineers, ";
 
     return (
         <>
@@ -92,6 +47,7 @@ const Abouts = () => {
                             <div></div>
                         </div>
                         <div className="col-lg-6 hero-img">
+                            {/* eslint-disable-next-line */}
                             <img src="assets/img/employee.png" className="img-fluid animated" alt="founik soft undraw image of a receptionist"/>
                         </div>
                     </div>
@@ -157,6 +113,7 @@ const Abouts = () => {
                             </div>
                         </div>
                         <div className="col-lg-6">
+                            {/* eslint-disable-next-line */}
                             <img src="assets/img/sof.png" className="img-fluid" alt="an icon of programming  languages"/>
                         </div>
                     </div>

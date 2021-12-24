@@ -43,6 +43,8 @@ const Step2 = () => {
         let err = [...errors];
 
         for(let prop in details){
+            if(prop === "company") continue;
+
             if(!details[prop] && !err.includes(prop)){
                 err.push(prop);
             } else if(details[prop] && err.includes(prop)){
@@ -80,7 +82,7 @@ const Step2 = () => {
         });
 
         let iti = window.intlTelInputGlobals.getInstance(phoneRef.current);
-        iti.setCountry(JSON.parse(localStorage.getItem('details')).country || 'us');
+        iti?.setCountry(JSON.parse(localStorage.getItem('details')).country || 'us');
 
         go && clicker.current.click();
 
@@ -113,7 +115,7 @@ const Step2 = () => {
                     <div className="flex justify-end items-center lg:space-x-3 space-x-0">
                         
                         <Link to="/hire" 
-                            className="grid place-content-center h-9 rounded-full text-sm text-gray-200 px-5 py-2
+                            className="hidden sm:grid place-content-center h-9 rounded-full text-sm text-gray-200 px-5 py-2
                                 transform scale-75 lg:scale-100
                             "
                              style={{background: '#555', border: 'none'}}
@@ -129,12 +131,12 @@ const Step2 = () => {
                 </div>
 
                 <div className="">
-                    <h1 className="text-2xl font-semibold lg:w-1/2">We will be glad to learn more about your company</h1>
+                    <h1 className="text-2xl font-semibold">We will be glad to learn more about your company</h1>
                     <p className="text-gray-700 py-4">Tell us about your business and hiring needs</p>
                 </div>
 
                 {/* Part-Time or Full-Time */}
-                <section className="flex flex-col lg:flex-row lg:space-x-5 lg:items-center items-start">
+                <section className="p-0 flex flex-col lg:flex-row lg:space-x-5 lg:items-center items-start">
                     <span className="pb-3 lg:pb-0">Your hiring needs</span>
                     <div className="space-x-4 opt">
                         {time.map((t,index) => {
@@ -158,7 +160,7 @@ const Step2 = () => {
                 </section>
 
                 {/* Numbers of staffs */}
-                <section className="flex flex-col space-y-3 items-start">
+                <section className="p-0 flex flex-col space-y-3 items-start">
                     <span className="">Current employees in your company</span>
                     <div className="space-x-4 space-y-2 lg:space-y-0 opt">
                         {staffs.map((staff, index) => {
@@ -183,7 +185,7 @@ const Step2 = () => {
 
 
                 {/* Other Details */}
-                <section className="lg:space-y-8 space-y-4">
+                <section className="p-0 lg:space-y-8 space-y-4">
 
                     <div className="">
                         <label htmlFor="email" className="block">Your Name</label>
@@ -211,7 +213,7 @@ const Step2 = () => {
                             <input 
                                 ref={phoneRef}
                                 className={`
-                                    block my-3 py-2 px-3 lg:text-lg text-md rounded-md w-full border-2 
+                                    block my-3 py-2 pr-3 lg:text-lg text-md rounded-md w-full border-2 
                                     bg-white
                                     ${errors.includes('phone') ? 'border-red-400' : 'border-gray-400'}
                                 `}
@@ -236,14 +238,14 @@ const Step2 = () => {
                                 ${errors.includes('company') ? 'border-red-400' : 'border-gray-400'}
                             `}
                             type="text"
-                            name="website" 
+                            name="website"
                             value={details.company}
-                            onBlur={handleEmpty}
+                            // onBlur={handleEmpty}
                             onChange={(e)=> setDetails({...details, company: e.target.value})}
                             placeholder="https://www.company-name.com"
                         />
                     </div>
-                    {errors.includes('company') && <p className="text-red-400 text-xs">Please enter a company website</p>}
+                    {/* {errors.includes('company') && <p className="text-red-400 text-xs">Please enter a company website</p>} */}
                 </div>
                 
                 </section>
@@ -252,7 +254,7 @@ const Step2 = () => {
 
                 <button onClick={checkErrors} 
                     className={`
-                    inline-flex text-sm font-bold py-4 px-12 text-white 
+                    inline-flex text-sm font-bold py-3 px-12 text-white 
                     rounded-md justify-center items-center focus:ring-2 ring-offset-2
                     ${ !loading ?  'bg-black ring-black' : 'bg-gray-600 ring-gray-600' }
                     `} disabled={loading ? true : false}>

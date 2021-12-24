@@ -1,4 +1,3 @@
-// import {Link} from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
 import intlTelInput from 'intl-tel-input';
@@ -7,61 +6,20 @@ import {useEffect, useRef, useState} from 'react';
 
 
 const BookConsultaion = () => {
-
-    document.head.innerHTML = `
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet">
-
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.css" rel="stylesheet">
-    <link href="assets/css/intlTelInput.min.css" rel="stylesheet">
-
-
-    <meta content=" founik-soft has develop an App solution kit which makes owing a Tech startup a breeze. we  build, market and manage the overall  clients Apps business." name="description">
-    <meta content="software company, “software developer, software engineers, " name="keywords">
-
-    <!-- Google Tag Manager -->
-      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-TVFCCN4');</script>
-    <!-- End Google Tag Manager -->
-
-
-    <!-- Facebook Pixel Code -->
-      <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '879346696086897');
-        fbq('track', 'PageView');
-      </script>
-      <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=879346696086897&ev=PageView&noscript=1"
-      /></noscript>
-    <!-- End Facebook Pixel Code -->
-<meta name="theme-color" content="#000000" />
-    <link rel="icon" href="/favicon.png" />
     
-  `
     document.title = 'Book Free Consultation For Your Business Hiring Needs With Founik Remote';
+    document.head.querySelector('meta[name=description]').content = "founik-soft has develop an App solution kit which makes owing a Tech startup a breeze. we  build, market and manage the overall  clients Apps business.";
+    document.head.querySelector('meta[name=keywords]').content = "software company, “software developer, software engineers"
 
     const phoneRef = useRef(null);
+    // const myFormRef = useRef(null);
     const [initTel, setInitTel] = useState(false);
+    // const [ form, setForm ] = useState({
+    //     name: null,
+    //     phone: null,
+    //     email: null,
+    //     subject: null,
+    // })
     
     useEffect(()=>{
 
@@ -86,6 +44,31 @@ const BookConsultaion = () => {
         }
     }, [initTel]);
 
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     console.log(form)
+    // }
+
+    // const handleChange = (attr, e) => {
+    //     switch (attr){
+    //         case 'name':
+    //             setForm({...form,[attr]: e.target.value});
+    //             break;
+    //         case 'email':
+    //             setForm({...form,[attr]: e.target.value});
+    //             break;
+    //         case 'phone':
+    //             setForm({...form,[attr]: e.target.value});
+    //             break;
+    //         case 'subject':
+    //             setForm({...form,[attr]: e.target.value});
+    //             break;
+    //         case 'message':
+    //             setForm({...form,[attr]: e.target.value});
+    //             break;
+    //     }
+    // }
+
     return (
         <>
             <noscript>
@@ -101,12 +84,12 @@ const BookConsultaion = () => {
 
             <Header/>
 
-            <section id="hero" className="d-flex align-items-center">
+            <section id="hero" className="d-flex align-items-center pb-0">
                 <div className="container">
-                    <div className="row">
+                    <div className="row relative overflow-hidden">
                         <div className="
                                                                             col-lg-6
-                                                                            pt-5 pt-lg-0
+                                                                            pt-5 pt-lg-0 pb-8
                                                                             d-flex
                                                                             flex-column
                                                                             justify-content-center
@@ -122,15 +105,16 @@ const BookConsultaion = () => {
                             </h2>
                             <div></div>
                         </div>
-                        <div className="col-lg-6 hero-img">
-                            <img src="assets/img/consultation.png" className="img-fluid animated" alt="founik soft undraw image of business consultants"/>
+                        <div className="col-lg-6 hero-img relative bottom-0">
+                            {/* eslint-disable-next-line */}
+                            <img src="assets/img/consultation.png" className="img-fluid animated mx-auto" alt="founik soft undraw image of business consultants"/>
                         </div>
                     </div>
                 </div>
             </section>
 
 
-            <main id="main">
+            <main id="main pt-10">
 
                 <section id="contact" className="contact"
                     style={
@@ -185,8 +169,8 @@ const BookConsultaion = () => {
                                     </div>
 
 
-                                    <a href="" target="blank">
-                                        <button type="button" className="btn btn-primary btn-lg">
+                                    <a href="https://wa.me/message/3KOMWA47YOUEO1" target="blank">
+                                        <button type="button" className="btn btn-primary btn-lg bg-black border-0">
                                             start a chat with a recruiting expert
                                         </button>
                                     </a>
@@ -196,23 +180,28 @@ const BookConsultaion = () => {
 
 
                             <div className="col-lg-6 col-md-12 order-1 order-lg-2">
-                                <form id="myForm" role="form" className="php-email-form">
+                                <form  id="myForm" className="php-email-form">
                                     <div className="form-group">
-                                        <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" required/>
+                                        <input type="text" name="name" className="form-control" id="name" placeholder="Your Name"
+                                        required/>
                                     </div>
                                     <div className="form-group">
                                         <input type="tel" name="Phone" 
-                                        ref="phoneRef"
-                                        className="form-control" id="Phone" placeholder="You can type in your country code directly on form field" minlength="9" maxlength="16" pattern="[0-9,+, -]+" required/>
+                                        ref={phoneRef}
+                                        className="form-control" id="Phone" placeholder="You can type in your country code directly on form field" minlength="9" maxlength="16" pattern="[0-9,+, -]+"
+                                        required/>
                                     </div>
                                     <div className="form-group">
-                                        <input type="email" className="form-control" name="email" id="email" placeholder="Your Email" required/>
+                                        <input type="email" className="form-control" name="email" id="email" placeholder="Your Email"
+                                        required/>
                                     </div>
                                     <div className="form-group">
-                                        <input type="text" className="form-control" name="subject" id="subject" placeholder="Subject" required/>
+                                        <input type="text" className="form-control" name="subject" id="subject" placeholder="Subject"
+                                        required/>
                                     </div>
                                     <div className="form-group">
-                                        <textarea className="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                                        <textarea className="form-control" name="message" rows="5" placeholder="Message"
+                                        required></textarea>
                                     </div>
                                     <div className="my-3">
                                         <div className="loading">

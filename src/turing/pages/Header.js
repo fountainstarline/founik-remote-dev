@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-export default() => {
+import founik from '../static/founik.png';
+const Header = () => {
     return (
 
         <header id="header" className="fixed-top d-flex align-items-center">
@@ -8,7 +9,7 @@ export default() => {
                 <div className="logo">
                     <h1>
                         <Link to="/">
-                            <img src="assets/img/logo.png" alt="" width="200" height="auto"/>
+                            <img src={founik} alt="" width="200" height="auto"/>
                         </Link>
                     </h1>
 
@@ -20,20 +21,20 @@ export default() => {
 
 
                         <li>
-                            <Link to="/contact-us">
+                            <a href="/hire">
                                 Jump to hiring page
-                            </Link>
+                            </a>
                         </li>
                         <li>
                             <Link to="/book-consultation">
                                 Book free hiring consultation
                             </Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link to="/partnership">
                                 Join our Partners
                             </Link>
-                        </li>
+                        </li> */}
 
 
                     </ul>
@@ -46,3 +47,5 @@ export default() => {
 
     );
 }
+
+export default Header;

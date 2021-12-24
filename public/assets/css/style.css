@@ -1,10 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.slideInLeft{
+  /* animation: slideInLeft .5s linear;
+  animation-delay: var(--delay); */
+  
+  
+  transform: translateX(0px);
+}
+
+.transformX-100{
+  transform: translateX(100px);
+  transition: transform .5s;
+  transition-delay: var(--delay);
+}
+
+*{
+  font-family: 'Poppins'!important;
+}
+
+.btn{
+  padding: .7rem 1.5rem!important;
+  font-size: 16px;
+}
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Apercu', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #444444;
   background-color: #fff;
 }
@@ -304,10 +339,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero h2 {
   color: #f6f6f6;
-  line-height: 40px;
+  line-height: 25px;
   margin: 20px 0px 0px ;
   font-family: sans-serif;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 
@@ -346,13 +381,14 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 36px;
   }
   #hero h2 {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 24px;
     margin-bottom: 30px;
     text-align:left;
   }
   #hero .hero-img img {
     width: auto;
+    margin-left: 0!important;
   }
 }
 @media (max-width: 575px) {
@@ -367,6 +403,12 @@ h1, h2, h3, h4, h5, h6 {
   height: 90vh;
   margin-top: 70px;
   background-color:#0d2187;
+}
+
+.fake{
+  background-color: #222;
+  margin: 0!important;
+  width: 100%!important;
 }
 #hero2 h1 {
   margin: 0 0 10px 0;
@@ -708,17 +750,19 @@ section {
 }
 
   .services .icon-box p {
-    padding: 10px 0 0 0px;
     position: relative;
     overflow: hidden;
-    /* background: #fff; */
-    /* box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12); */
     transition: all 0.3s ease-in-out;
     border-radius: 8px;
     z-index: 1;
-    
-    line-height: 30px;
-    font-size: 20px;
+    font-size: 15px;
+    padding: 0;
+    line-height: 1.3rem;
+  }
+  
+  .services .icon-box h4{
+    font-weight: bold;
+    padding: 1rem 0;
   }
   
 
@@ -727,35 +771,24 @@ section {
   padding: 0px;
   position: relative;
   overflow: hidden;
-  /* background: #fff; */
-  /* box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12); */
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   z-index: 1;
   
 }
-  .services .icon-box p {
-    padding: 10px 0 0 0px;
-    position: relative;
-    overflow: hidden;
-    /* background: #fff; */
-    /* box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12); */
-    transition: all 0.3s ease-in-out;
-    border-radius: 8px;
-    z-index: 1;
-    
-    line-height: 30px;
-    font-size: 20px;
-  }
+.services .icon-box p {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+}
 }
 
 @media (max-width: 768px) {
     .services .icon-box p {
-    padding: 10px 0 0 10px;
     position: relative;
     overflow: hidden;
-    /* background: #fff; */
-    /* box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12); */
     transition: all 0.3s ease-in-out;
     border-radius: 8px;
     z-index: 1;
@@ -779,32 +812,34 @@ section {
 
 
 }
+
 @media (max-width: 575px) {
       .services .icon-box p {
-    padding: 10px 0 0 10px;
     position: relative;
     overflow: hidden;
-    /* background: #fff; */
-    /* box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12); */
     transition: all 0.3s ease-in-out;
     border-radius: 8px;
     z-index: 1;
     text-align:center;
   }
 
-.services .icon-box {
-  padding: 25px;
-  position: relative;
-  overflow: hidden;
-  /* background: #fff; */
-  /* box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12); */
-  transition: all 0.3s ease-in-out;
-  border-radius: 8px;
-  font-size: 20px;
-  color: #222222;
-  z-index: 1;
-  text-align:center;
-}
+  .services .icon-box {
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+    /* background: #fff; */
+    /* box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12); */
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #222222;
+    z-index: 1;
+    text-align:center;
+  }
+
+  .services .icon {
+    margin: auto;
+  }
 
 
 }
@@ -823,9 +858,10 @@ section {
 }
 
 .services .icon {
-  margin: 0 auto 20px auto;
-  padding-top: 10px;
-  display: inline-block;
+  /* margin: 0 auto 20px auto;
+  padding-top: 10px; */
+  display: grid;
+  place-content: center;
   text-align: center;
   border-radius: 50%;
   width: 100px;
@@ -937,7 +973,7 @@ section {
   font-size: 18px;
   display: inline-block;
   background: #fff;
-  color: #3498db;
+  color: #f5982e;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -946,7 +982,7 @@ section {
   width: 36px;
   height: 36px;
   transition: 0.3s;
-  border: 1px solid #3498db;
+  border: 1px solid #f5982e;
 }
 .contact .social-links a:hover {
   background: #3498db;
@@ -957,7 +993,7 @@ section {
 }
 .contact .info i {
   font-size: 32px;
-  color: #3498db;
+  color: #f5982e;
   float: left;
   line-height: 1;
 }
@@ -1016,7 +1052,7 @@ section {
   border-color: #3498db;
 }
 .contact .php-email-form button[type=submit] {
-  background: #3498db;
+  background: #000;
   border: 0;
   padding: 10px 24px;
   color: #fff;

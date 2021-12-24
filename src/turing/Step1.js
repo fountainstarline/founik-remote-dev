@@ -63,15 +63,15 @@ const Step1 = () => {
                 </div>
 
                 <div className="">
-                    <h1 className="text-2xl font-semibold">Choose the developer's skill you wish to hire</h1>
-                    <p className="text-gray-700 py-4">Choose at least one skill or Select no idea so we could suggest the right skill that fits your business after free consultation</p>
+                    <h1 className="text-2xl font-semibold">Choose or search out the developer's skill you wish to hire</h1>
+                    <p className="text-gray-700 py-4">Choose at least one skill or Select no idea so we could suggest the right skill that fits your hiring needs free consultation</p>
                 </div>
 
                 <Jobs />
                 
                 <OtherJobs errors={errors}/>
 
-                <section className="">
+                <section className="p-0">
                     <label htmlFor="email" className="block">Work Email Address</label>
                     <div className="grid grid-cols-6">
                         <input 
@@ -94,7 +94,7 @@ const Step1 = () => {
                 <button
                     onClick={checkErrors}
                     className="
-                        inline-flex text-sm font-bold py-4 px-12 text-white 
+                        inline-flex text-sm font-bold py-3 px-12 text-white 
                         bg-black rounded-md justify-center items-center
                         focus:ring-2 ring-offset-2 ring-black
                     ">
