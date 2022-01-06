@@ -1,8 +1,7 @@
 {
   "name": "hire-dev-react",
   "version": "0.1.0",
-  "homepage": "https://chibykes.github.io/",
-  "private": true,
+  "homepage": "https://chibykes.github.io/founik-remote",
   "dependencies": {
     "@craco/craco": "^6.4.0",
     "@testing-library/jest-dom": "^5.15.0",
