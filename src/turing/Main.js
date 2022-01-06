@@ -197,40 +197,40 @@ const Main = () => {
     }>
         <Router>
             <Switch>
-                <Route exact path='/founik-remote/'
+                <Route exact path='/'
                     component={Index}/>
 
-                <Route exact path='/founik-remote/about'
+                <Route exact path='/about'
                     component={Abouts}/>
 
-                <Route exact path='/founik-remote/book-consultation'
+                <Route exact path='/book-consultation'
                     component={BookConsultation}/>
 
-                <Route exact path='/founik-remote/contact-us'
+                <Route exact path='/contact-us'
                     component={ContactUs}/>
 
-                <Route exact path='/founik-remote/help-center'
+                <Route exact path='/help-center'
                     component={HelpCenter}/>
 
-                <Route exact path='/founik-remote/partnership'
+                <Route exact path='/partnership'
                     component={Partnership}/>
 
-                <Route exact path='/founik-remote/support'
+                <Route exact path='/support'
                     component={Support}/>
 
-                <Route exact path='/founik-remote/thanks'
+                <Route exact path='/thanks'
                     component={Thank}/>
 
-                <Route exact path='/founik-remote/hire'
+                <Route exact path='/hire'
                     component={Step1}/>
 
-                <Route exact path='/founik-remote/company-details'
+                <Route exact path='/company-details'
                     component={Step2}/>
 
-                <Route exact path='/founik-remote/final'
+                <Route exact path='/final'
                     component={Step3}/>
 
-                <Route path='/founik-remote/*'
+                <Route path='/*'
                     component={Page404}/>
             </Switch>
         </Router>
