@@ -87,14 +87,14 @@ const Footer = () => {
                     </div>
                     <div className="social-links text-center text-md-left pt-3 pt-md-0">
 
-                        <a href="https://web.facebook.com/FounikRemote/" target="blank" className="facebook">
+                        <a href="https://web.facebook.com/founiksoft?_rdc" target="blank" className="facebook">
                             <i className="bx bxl-facebook"></i>
                         </a>
-                        <a href="https://www.instagram.com/founikremote/" target="blank" className="instagram">
+                        <a href="https://www.instagram.com/founiksoft" target="blank" className="instagram">
                             <i className="bx bxl-instagram"></i>
                         </a>
 
-                        <a href="https://www.linkedin.com/company/founik-remote" target="blank" className="linkedin">
+                        <a href="https://www.linkedin.com/company/founik-soft" target="blank" className="linkedin">
                             <i className="bx bxl-linkedin"></i>
                         </a>
                     </div>

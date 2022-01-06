@@ -1,6 +1,7 @@
 {
   "name": "hire-dev-react",
   "version": "0.1.0",
+  "homepage": "https://chibykes.github.io/",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.4.0",
@@ -19,9 +20,11 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "craco build",
+    "build": "set \"GENERATE_SOURCEMAP=false\" &&  craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +46,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.8.8",
+    "gh-pages": "^3.2.3",
     "intl-tel-input": "^17.0.13",
     "postcss": "^7.0.39",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"

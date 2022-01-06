@@ -22,6 +22,7 @@ import {
     BsWhatsapp,
     BsFacebook,
     FaPhoneAlt,
+    BsLinkedin
 } from 'react-icons/all';
 
 
@@ -163,9 +164,9 @@ const Main = () => {
     };
 
     const animation = () => {
-        if(!localStorage.getItem('knowContact')){
-            localStorage.setItem('knowContact', true);
-        }
+        // if(!localStorage.getItem('knowContact')){
+        //     localStorage.setItem('knowContact', true);
+        // }
         setShowContact(!showContact);
         if(showContact){
             document.querySelectorAll('.transformX-100').forEach(el => {
@@ -176,8 +177,6 @@ const Main = () => {
                 el.style.transform = 'translateX(0px)';
             });
         }
-        
-
     }
 
 
@@ -237,22 +236,29 @@ const Main = () => {
         </Router>
 
         <div className="fixed bottom-5 right-5 z-50 flex flex-col justify-end">
-            <a href="tel:+2348139956940" 
+            <a href="tel:+2348139956940"
                 className=
                 {`bg-yellow-500 my-2 shadow-md rounded-full w-14 h-14 place-content-center ml-auto
                 grid transformX-100 `}  
-                style={{ '--delay': '.3s' }}>
+                style={{ '--delay': '.4s' }}>
                 <FaPhoneAlt className="text-white text-2xl" />
             </a>
-
-            <a href="https://web.facebook.com/FounikRemote/" 
+            {/* eslint-disable-next-line */}
+            <a href="https://www.linkedin.com/company/founik-soft" target="_blank"
+                className={`bg-blue-800 my-2 shadow-md rounded-full w-14 h-14 place-content-center ml-auto
+                grid transformX-100 `} 
+                style={{ '--delay': '.3s' }}>
+                <BsLinkedin className="text-white text-2xl" />
+            </a>
+            {/* eslint-disable-next-line */}
+            <a href="https://web.facebook.com/founiksoft?_rdc" target="_blank"
                 className={`bg-blue-500 my-2 shadow-md rounded-full w-14 h-14 place-content-center ml-auto
                 grid transformX-100 `} 
                 style={{ '--delay': '.2s' }}>
                 <BsFacebook className="text-white text-2xl" />
             </a>
-
-            <a href="https://wa.me/message/3KOMWA47YOUEO1"
+            {/* eslint-disable-next-line */}
+            <a href="https://wa.me/message/3KOMWA47YOUEO1" target="_blank"
                 className={`bg-green-500 my-2 shadow-md rounded-full w-14 h-14 place-content-center ml-auto
                 grid transformX-100 `} 
                 style={{ '--delay': '.1s' }}>
@@ -261,13 +267,13 @@ const Main = () => {
 
 
             <div className="flex justify-center items-center">
-                <div 
+                {/* <div 
                     className={`bg-white my-2 shadow-md rounded-full px-5 py-1 grid place-content-center cursor-pointer mr-3
                         ${localStorage.getItem('knowContact') && 'hidden'}
                     `}
                 >
                     Reach us on more channels!
-                </div>
+                </div> */}
                 <div 
                     className="bg-purple-500 my-2 shadow-md rounded-full w-14 h-14 grid place-content-center cursor-pointer"
                     onClick={animation}

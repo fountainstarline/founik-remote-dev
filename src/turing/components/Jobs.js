@@ -103,8 +103,7 @@ const Jobs = () => {
                 data-job={title}
                 className={
                     `
-                        bg-white cursor-pointer flex flex-col text-center items-center 
-                        space-y-4 justify-center h-24 p-1 shadow-sm hover:shadow-lg rounded-md
+                        job
                         ${
                         jobs.includes(title) ? 'job-active' : null
                     }

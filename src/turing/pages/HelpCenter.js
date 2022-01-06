@@ -16,6 +16,8 @@ const HelpCenter = () => {
     const [initTel, setInitTel] = useState(false);
     
     useEffect(()=>{
+        window.scrollTo(0, 0);
+
 
         !initTel && intlTelInput(phoneRef.current, {
             initialCountry: "us",

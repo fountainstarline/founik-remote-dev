@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {Link} from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -8,6 +9,13 @@ const Abouts = () => {
     document.title = 'About Founik Remote';
     document.head.querySelector('meta[name=description]').content = " founik-soft has develop an App solution kit which makes owing a Tech startup a breeze. we  build, market and manage the overall  clients Apps business.";
     document.head.querySelector('meta[name=keywords]').content = "software company, “software developer, software engineers, ";
+
+    useEffect(() => {
+
+        window.scrollTo(0, 0);
+
+        //eslint-disable-next-line
+    }, []);
 
     return (
         <>

@@ -15,3 +15,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.job{
+  @apply bg-white cursor-pointer flex flex-col text-center items-center space-y-4 justify-center h-24 p-1 shadow hover:shadow-lg rounded-md
+}

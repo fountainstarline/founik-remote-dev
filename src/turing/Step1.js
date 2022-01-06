@@ -1,4 +1,4 @@
-import { useContext, useRef, useState } from 'react';
+import { useContext, useRef, useState, useEffect } from 'react';
 import Jobs from './components/Jobs';
 import OtherJobs from './components/OtherJobs';
 import { FaChevronRight } from 'react-icons/fa';
@@ -49,15 +49,22 @@ const Step1 = () => {
         }
     }
 
+    useEffect(() => {
+
+        window.scrollTo(0, 0);
+
+        //eslint-disable-next-line
+    }, []);
+
     return (
         <>
             <main className="max-w-3xl mx-auto py-12 px-4 font-gordita space-y-8">
                 <div className="flex justify-between items-center bg-black rounded-lg p-3">
                     <h1 className="flex items-center space-x-3">
-                        <img src={logo} alt="" className="w-6 h-6 filter invert" />
-                        <span className="font-bold text-xl font-gordita-bold text-white">Hire Screened Dev</span>
+                        <img src={logo} alt="" className="w-6 h-6 filter invert lg:block hidden" />
+                        <span className="font-bold lg:text-xl text-sm font-gordita-bold text-white">Hire Screened Dev</span>
                     </h1>
-                    <button className="rounded-full text-sm text-gray-100 px-5 py-2 transform scale-75 lg:scale-100" style={{background: '#555', border: 'none'}}>
+                    <button className="rounded-full text-sm text-gray-100 lg:px-5 px-4 py-2 transform scale-75 lg:scale-100" style={{background: '#555', border: 'none'}}>
                         Step 1/3
                     </button>
                 </div>

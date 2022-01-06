@@ -9,7 +9,7 @@ const BookConsultaion = () => {
     
     document.title = 'Book Free Consultation For Your Business Hiring Needs With Founik Remote';
     document.head.querySelector('meta[name=description]').content = "founik-soft has develop an App solution kit which makes owing a Tech startup a breeze. we  build, market and manage the overall  clients Apps business.";
-    document.head.querySelector('meta[name=keywords]').content = "software company, “software developer, software engineers"
+    document.head.querySelector('meta[name=keywords]').content = "software company, “software developer, software engineers";
 
     const phoneRef = useRef(null);
     // const myFormRef = useRef(null);
@@ -32,8 +32,9 @@ const BookConsultaion = () => {
         setInitTel(true);
 
         phoneRef.current.addEventListener('countrychange', () => {
+            // eslint-disable-next-line
             let iti = window.intlTelInputGlobals.getInstance(phoneRef.current);
-            console.log(iti.getSelectedCountryData().iso2);
+            // console.log(iti.getSelectedCountryData().iso2);
         });
 
         // let iti = window.intlTelInputGlobals.getInstance(phoneRef.current);
@@ -84,24 +85,17 @@ const BookConsultaion = () => {
 
             <Header/>
 
-            <section id="hero" className="d-flex align-items-center pb-0">
+            <section id="hero" className="d-flex align-items-center pb-0" onLoad={window.scrollTo(0, 0)}>
                 <div className="container">
                     <div className="row relative overflow-hidden">
-                        <div className="
-                                                                            col-lg-6
-                                                                            pt-5 pt-lg-0 pb-8
-                                                                            d-flex
-                                                                            flex-column
-                                                                            justify-content-center
-                                                                          ">
+                        <div className=" col-lg-6 pt-5 pt-lg-0 pb-8 d-flex flex-column justify-content-center">
                             <h1 style={
                                 {lineHeight: '40px'}
                             }>
                                 Discover best hiring options and tips for your business needs
                             </h1>
                             <h2>
-                                Every business need requires a unique hiring approach for a more effective result. Book a 
-                                                                          free consultation today to learn more about the best hiring options and tips for your business needs.
+                                Every business need requires a unique hiring approach for a more effective result. Book a free consultation today to learn more about the best hiring options and tips for your business needs.
                             </h2>
                             <div></div>
                         </div>

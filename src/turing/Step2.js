@@ -106,23 +106,25 @@ const Step2 = () => {
 
     return (
         <>
-            <main className="max-w-3xl mx-auto py-12 px-4 font-gordita lg:space-y-8 space-y-8">
+            <main className="max-w-3xl mx-auto py-12 px-4 font-gordita lg:space-y-8 space-y-8"
+                onLoad={window.scrollTo(0, 0)}
+            >
                 <div className="flex justify-between items-center bg-black rounded-lg p-3">
                     <h1 className="flex items-center space-x-3">
-                        <img src={logo} alt="" className="w-6 h-6 filter invert" />
-                        <span className="font-bold text-xl font-gordita-bold text-white">Hire Screened Dev</span>
+                        <img src={logo} alt="" className="w-6 h-6 filter invert lg:block hidden" />
+                        <span className="font-bold lg:text-xl text-sm font-gordita-bold text-white">Hire Screened Dev</span>
                     </h1>
                     <div className="flex justify-end items-center lg:space-x-3 space-x-0">
                         
                         <Link to="/hire" 
-                            className="hidden sm:grid place-content-center h-9 rounded-full text-sm text-gray-200 px-5 py-2
+                            className="hidden sm:grid place-content-center h-9 rounded-full text-sm text-gray-200 lg:px-5 px-3 py-2
                                 transform scale-75 lg:scale-100
                             "
                              style={{background: '#555', border: 'none'}}
                             >
                             <FaChevronLeft className="text-md"></FaChevronLeft>
                         </Link>
-                        <button className="h-9 rounded-full text-sm text-gray-100 px-5 py-2 transform scale-75 lg:scale-100"
+                        <button className="h-9 rounded-full text-sm text-gray-100 lg:px-5 px-4 py-2 transform scale-75 lg:scale-100"
                              style={{background: '#555', border: 'none'}}
                         >
                             Step 2/3
@@ -131,14 +133,15 @@ const Step2 = () => {
                 </div>
 
                 <div className="">
-                    <h1 className="text-2xl font-semibold">We will be glad to learn more about your company</h1>
-                    <p className="text-gray-700 py-4">Tell us about your business and hiring needs</p>
+                    {/* <h1 className="text-2xl font-semibold">We will be glad to learn more about your company</h1> */}
+                    {/* <p className="text-gray-700 py-4">Tell us about your business and hiring needs</p> */}
+                    <h1 className="text-2xl font-semibold">Tell us about your business and hiring needs</h1>
                 </div>
 
                 {/* Part-Time or Full-Time */}
                 <section className="p-0 flex flex-col lg:flex-row lg:space-x-5 lg:items-center items-start">
                     <span className="pb-3 lg:pb-0">Your hiring needs</span>
-                    <div className="space-x-4 opt">
+                    <div className="space-x-4 space-y-2 opt">
                         {time.map((t,index) => {
                             return(
                                 <button 

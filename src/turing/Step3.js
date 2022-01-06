@@ -8,7 +8,7 @@ const Step3 = () => {
         ">
             <div className="text-center space-y-2">
                 <span className="text-2xl">📧</span>
-                <h1 className="font-bold text-xl font-gordita-bold">Thanks for you feedback</h1>
+                <h1 className="font-bold text-xl font-gordita-bold">Thanks for your feedback</h1>
                 <p className="text-sm text-gray-400">We would respond to you soon...</p>
             </div>
         </main>

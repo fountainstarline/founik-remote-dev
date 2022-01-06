@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {Link} from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -7,7 +8,15 @@ const Index = () => {
 
     document.title = 'Hire remote developers within 48hours from Founik Remote';
     document.head.querySelector('meta[name=description]').content = "Hire Founik Soft screened remote developers within 48hours and secure a 100% refund guarantee on any failed contract plus emergency worker backup for each hire you made. ";
-    document.head.querySelector('meta[name=keywords]').content = "Ai engineers, Machine Learning Engineers, Data Scientist, Web developers, Website developers, Back End-developers, Frontend developers, Mobile-apps-developers, Quality-assurance, Wordpress-developers, DevOp-Engineers, shopify website developers, cloud computing engineers, cyber security, AWS computing, best software outsourcing companies, hire remote developers, hire FOUNIK SOFT REMOTE DEVELOPERS, HIRE FOUNIK REMOTE DEVELOPERS"
+    document.head.querySelector('meta[name=keywords]').content = "Ai engineers, Machine Learning Engineers, Data Scientist, Web developers, Website developers, Back End-developers, Frontend developers, Mobile-apps-developers, Quality-assurance, Wordpress-developers, DevOp-Engineers, shopify website developers, cloud computing engineers, cyber security, AWS computing, best software outsourcing companies, hire remote developers, hire FOUNIK SOFT REMOTE DEVELOPERS, HIRE FOUNIK REMOTE DEVELOPERS";
+
+    useEffect(() => {
+
+        window.scrollTo(0, 0);
+        return null;
+
+        //eslint-disable-next-line
+    }, []);
 
     return (
         <>
@@ -283,7 +292,7 @@ const Index = () => {
                                             {
                                                 fontSize: '20px',
                                                 lineHeight: '30px',
-                                                fontWeight: "bold",
+                                                // fontWeight: "bold",
                                                 textTransform: "capitalize"
                                             }
                                         }

@@ -18,6 +18,8 @@ const ContactUs = () => {
     
     useEffect(()=>{
 
+        window.scrollTo(0, 0);
+
         !initTel && intlTelInput(phoneRef.current, {
             initialCountry: "us",
             autoPlaceholder: 'aggressive',
